@@ -3,11 +3,22 @@
 <head>
   <title>Open external file using jQuery</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script type="text/javascript" src="../rune.js"></script>
+  <script type="text/javascript" src="../rune.noise.js"></script>
+  <style type="text/css">
+    body {
+      background-color: #EAEAEA;
+    }
+    #canvas svg {
+      background-color: white;
+      box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.06),inset -1px -1px 1px 0 rgba(0, 0, 0, 0.02);
+      border: 1px solid #E2E2E2;
+      border-bottom-color: #CECECE;
+    }
+  </style>
 </head>
 <body>
-<button id="readFile">Read File</button>
-
-<div id="container"></div>
+<div id="canvas"></div>
+<script src="pierre.js"></script>
 </body>
 </html>
