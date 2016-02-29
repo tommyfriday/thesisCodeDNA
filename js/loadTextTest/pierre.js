@@ -1,5 +1,5 @@
 /*
-Tommy Payne 2015
+Tommy Payne 2016
 Thesis WIP code
 load DNA text file v1.1
 convert to lines
@@ -59,39 +59,34 @@ var y = noise.get(i * 0.2)* 40;
 
     if(wholeText.charAt(i) == "A"){
 
-      r.line(i*space, top, sizeW, sizeH)
+      r.circle(i*space, Rune.random(10, 500), sizeW)
       .fill('hsv', 0, 80, 90)
       .stroke(false)
       .strokeWidth(1);
     }
     else if (letter == "T") {
-      r.rect(i*space, top, sizeW, sizeH)
-      .fill(false)
-      .stroke('hsv', 300, 80, 90)
+      // r.rect(i*space, top, sizeW, sizeH)
+      r.circle(i*space, Rune.random(10, 500), sizeW)
+      .fill('hsv', 300, 80, 90)
+      .stroke(false)
       .strokeWidth(1);
     }
     else if (letter == "C") {
     //  r.rect(i+space, top, i, bottom)
-      r.rect(i*space, top, sizeW, sizeH)
-      .fill(false)
-      .stroke('hsv', 270, 80, 90)
+      // r.rect(i*space, top, sizeW, sizeH)
+      r.circle(i*space, Rune.random(10, 500), sizeW)
+      .fill('hsv', 270, 80, 90)
+      .stroke(false)
       .strokeWidth(1);
     }
     else {
-      r.rect(i*space, top, sizeW-3, sizeH)
-      .fill(false)
-      .stroke('hsv', 140, 80, 90)
+      // r.rect(i*space, top, sizeW-3, sizeH)
+      r.circle(i*space, Rune.random(10, 500), sizeW)
+      .fill('hsv', 140, 80, 90)
+      .stroke(false)
       .strokeWidth(1);
       }
 }
-
-
-
-
-
-
-
-
 
 
   r.draw();
